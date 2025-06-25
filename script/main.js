@@ -66,3 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fetchData();
 });
+
+document.getElementById("name").addEventListener("input", function () {
+  this.value = this.value.replace(/[^A-Za-z\s]/g, "");
+});
+
+document.getElementById("age").addEventListener("input", function () {
+  this.value = this.value.replace(/[^0-9]/g, "");
+});
+
+document.getElementById("search").addEventListener("input", function () {
+  this.value = this.value.replace(/[^A-Za-z0-9\s]/g, "");
+});
