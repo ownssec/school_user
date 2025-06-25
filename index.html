@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User CRUD</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2>User Registration</h2>
+
+    <form id="person-form">
+      <input type="hidden" name="id" />
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="number" name="age" placeholder="Age" required />
+      <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Search by name..." />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Created At</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="person-table"></tbody>
+    </table>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>
